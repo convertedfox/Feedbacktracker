@@ -42,7 +42,7 @@ st.header(st.session_state.header_text, anchor=False)
 
 # HTML-Inhalt mit Bildern und Abstand
 content = """
-<div style='display: flex; gap: 2cm;'>
+<div style='display: flex; gap: 3cm;'>
     <a href='#' id='Positiv'><img width='70%' src='https://em-content.zobj.net/source/apple/391/grinning-face_1f600.png'></a>
     <a href='#' id='Neutral'><img width='70%' src='https://em-content.zobj.net/source/apple/391/neutral-face_1f610.png'></a>
     <a href='#' id='Negativ'><img width='70%' src='https://em-content.zobj.net/source/apple/391/sad-but-relieved-face_1f625.png'></a>
