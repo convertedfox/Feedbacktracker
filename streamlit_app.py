@@ -35,7 +35,7 @@ if 'event_title' not in st.session_state:
     st.session_state['event_title'] = "Veranstaltung"
 
 # Titel und Logo
-st.image("https://www.cas.dhbw.de/fileadmin/user_upload/Dateien_CAS/Medien/DHBW_CAS_LOGO_Sonderform.jpg", use_column_width=True)
+st.image("https://www.cas.dhbw.de/fileadmin/user_upload/Dateien_CAS/Medien/DHBW_CAS_LOGO_Sonderform.jpg", use_container_width=True)
 
 # Header
 st.header(st.session_state.header_text, anchor=False)
