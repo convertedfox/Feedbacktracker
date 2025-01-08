@@ -18,7 +18,7 @@ st.set_page_config(page_title="Veranstaltungs-Feedback",
 
 # Initialisierung der Session State Variablen
 if 'header_text' not in st.session_state:
-    st.session_state.header_text = "Wie fanden Sie die Veranstaltung?"
+    st.session_state.header_text = "War diese Veranstaltung wertschöüfend für Dich?"
 if 'positiv_clicks' not in st.session_state:
     st.session_state['positiv_clicks'] = 0
 if 'neutral_clicks' not in st.session_state:
@@ -56,12 +56,15 @@ clicked = click_detector(content)
 if clicked == 'Positiv':
     st.toast("Danke!", icon="✅")
     st.session_state['positiv_clicks'] += 1
+    st.balloons()
 elif clicked == 'Neutral':
     st.toast("Danke!", icon="✅")
     st.session_state['neutral_clicks'] += 1
+    st.balloons()
 elif clicked == 'Negativ':
     st.toast("Danke!", icon="✅")
     st.session_state['negativ_clicks'] += 1
+    st.balloons()
 
 # Aktualisiere Votes in Session State
 st.session_state['votes'] = {
