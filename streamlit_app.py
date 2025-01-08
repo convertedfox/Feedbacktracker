@@ -18,7 +18,7 @@ st.set_page_config(page_title="Veranstaltungs-Feedback",
 
 # Initialisierung der Session State Variablen
 if 'header_text' not in st.session_state:
-    st.session_state.header_text = "War diese Veranstaltung wertschöüfend für Dich?"
+    st.session_state.header_text = "War diese Veranstaltung wertschöpfend für Dich?"
 if 'positiv_clicks' not in st.session_state:
     st.session_state['positiv_clicks'] = 0
 if 'neutral_clicks' not in st.session_state:
